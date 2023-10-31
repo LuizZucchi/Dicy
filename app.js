@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 var dicesRouter = require('./routes/dices');
 
 var app = express();
-
+app.use(express.urlencoded({ extended: true }));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

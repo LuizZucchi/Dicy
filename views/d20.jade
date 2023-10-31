@@ -1,5 +1,7 @@
-extends layout 
-
-block content 
-    h1= diceResult
-    p You rolled a #{diceResult}
+doctype html
+html
+  head
+    title Form Page
+  body
+    form(action="/dices/d20", method="post")
+      button(type="submit") Submit

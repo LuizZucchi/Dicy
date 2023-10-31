@@ -1,5 +1,9 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html
+  head
+    title Dices Page
+  body
+    h1 Your result is, #{myJson.result}!
+    form(action="/dices/d20", method="post")
+      button(type="submit") Submit
+    
