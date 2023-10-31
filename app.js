@@ -41,3 +41,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+// TODO: migrar para pug
+//       avaliar se n seria melhor migrar para um framework front de vdd
